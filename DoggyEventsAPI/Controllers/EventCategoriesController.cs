@@ -7,10 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DoggyEventsAPI.Controllers
 {
+//{apibaseurl}/api/eventcategories
   [Route("api/[controller]")]
   [ApiController]
   public class EventCategoriesController : ControllerBase
   {
+
+
     private readonly IEventCategoryRepository _eventCategoryRepository;
 
 
@@ -21,9 +24,11 @@ namespace DoggyEventsAPI.Controllers
     }
 
 
+
+
     //POST: {apibaseurl}/api/eventcategories
     [HttpPost]
-    [Authorize]
+    //[Authorize]
     public async Task<IActionResult> CreateEventCategory(CreateEventCategoryRequestDto eventCategoryCreateDto)
     {
       // Convert DTO to Domain Model
@@ -40,8 +45,48 @@ namespace DoggyEventsAPI.Controllers
         Name = category.Name
       };
       return Ok(response);
-
     }
+
+
+    //GET: {apibaseurl}/api/eventcategories
+    [HttpGet]
+    public async Task<IActionResult> GetAllCategories()
+    {
+      var categories = await _eventCategoryRepository.GetAllAsync();
+
+      var response = new List<EventCategoryDto>();
+      // map domain to dto
+      foreach (var category in categories)
+      {
+        response.Add(new EventCategoryDto
+        {
+          Id = category.Id,
+          Name = category.Name
+        });
+      }
+      return Ok(response);
+    }
+
+    //GET: {apibaseurl}/api/eventcategories/id
+    [HttpGet]
+    [Route("{id:Guid}")]
+    public async Task<IActionResult> GetCategoryById([FromRoute] Guid id)
+    {
+      var category = await _eventCategoryRepository.GetById(id);
+
+      if (category is null)
+      {
+        return NotFound();
+      }
+
+      var response = new EventCategoryDto
+      {
+        Id = category.Id,
+        Name = category.Name
+      };
+      return Ok(response);
+    }
+
 
 
   }

@@ -18,7 +18,7 @@ namespace DoggyEventsAPI.Controllers
     //use constructor injection for the repos
     public DoggyEventsController(IDoggyEventRepository doggyEventsRepository, IEventCategoryRepository eventCategoryRepository)
     {
-      this._eventCategoryRepository = eventCategoryRepository;\
+      this._eventCategoryRepository = eventCategoryRepository;
       this._doggyEventRepository = doggyEventsRepository;
     }
 

@@ -22,6 +22,11 @@ namespace DoggyEvents.DataAccess.Repositories.Implementation
       return eventCategory;
     }
 
+    public async Task<IEnumerable<EventCategory>> GetAllAsync()
+    {
+      return await _db.EventCategories.ToListAsync();
+    }
+
     public async Task<EventCategory?> GetById(Guid id)
     {
       return await _db.EventCategories.FirstOrDefaultAsync(u => u.Id == id);
