@@ -22,14 +22,47 @@ namespace DoggyEvents.DataAccess.Repositories.Implementation
       return eventCategory;
     }
 
+   
+
     public async Task<IEnumerable<EventCategory>> GetAllAsync()
     {
       return await _db.EventCategories.ToListAsync();
     }
 
+
     public async Task<EventCategory?> GetById(Guid id)
     {
       return await _db.EventCategories.FirstOrDefaultAsync(u => u.Id == id);
+    }
+
+
+
+    public async Task<EventCategory?> UpdateAsync(EventCategory category)
+    {
+      var existingCategory = await _db.EventCategories.FirstOrDefaultAsync(x => x.Id == category.Id);
+
+      if (existingCategory is not null)
+      {
+        _db.Entry(existingCategory).CurrentValues.SetValues(category);     
+        await _db.SaveChangesAsync();
+        return category;
+      }
+      return null;
+    }
+
+
+    public async Task<EventCategory?> DeleteAsync(Guid id)
+    {
+      var existingCategory = await _db.EventCategories.FirstOrDefaultAsync(x => x.Id == id);
+
+      if (existingCategory is null)
+      {
+        return null;
+      }
+
+      _db.EventCategories.Remove(existingCategory);
+      await _db.SaveChangesAsync();
+      return existingCategory;
     }
   }
 }
