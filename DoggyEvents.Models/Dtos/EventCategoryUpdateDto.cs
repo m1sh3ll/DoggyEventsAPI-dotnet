@@ -11,6 +11,6 @@ namespace DoggyEvents.Models.Dtos
   {
     public string Name { get; set; }   
 
-    public List<DoggyEvent> DoggyEvents { get; set; } 
+    
   }
 }
