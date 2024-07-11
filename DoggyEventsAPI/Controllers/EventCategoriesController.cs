@@ -88,6 +88,57 @@ namespace DoggyEventsAPI.Controllers
     }
 
 
+    //PUT: {apibaseurl}/api/eventcategories/id
+    [HttpPut("{id:Guid}")]
+    //[Authorize]
+    public async Task<IActionResult> EditCategory([FromRoute] Guid id, EventCategoryUpdateDto categoryUpdateDto)
+    {
+      //convert dto to Domain model
+      var category = new EventCategory
+      {
+        Id = id,
+        Name = categoryUpdateDto.Name
+      };
+
+      category = await _eventCategoryRepository.UpdateAsync(category);
+
+      if (category is null)
+      {
+        return NotFound();
+      }
+
+      //convert domain model to DTO
+      var response = new EventCategoryDto
+      {
+        Id = id,
+        Name = categoryUpdateDto.Name
+      };
+      return Ok(response);
+    }
+
+
+    [HttpDelete("{id:Guid}")]
+    //[Authorize]
+    public async Task<IActionResult> DeleteCategory([FromRoute] Guid id)
+    {
+      var category = await _eventCategoryRepository.DeleteAsync(id);
+      if (category is null)
+      {
+        return NotFound();
+      }
+      //convert domain to dto
+      var response = new EventCategoryDto
+      {
+        Id = category.Id,
+        Name = category.Name
+
+      };
+
+      return Ok(response);
+
+    }
+
+
 
   }
 }
