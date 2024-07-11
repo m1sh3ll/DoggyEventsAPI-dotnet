@@ -28,7 +28,7 @@ namespace DoggyEventsAPI.Controllers
 
     //POST: {apibaseurl}/api/doggyevents
     [HttpPost]
-    [Authorize]
+    //[Authorize]
     public async Task<IActionResult> CreateDoggyEvent([FromBody] CreateDoggyEventRequestDto doggyEventCreateDto)
     {
       // Convert DTO to Domain Model
