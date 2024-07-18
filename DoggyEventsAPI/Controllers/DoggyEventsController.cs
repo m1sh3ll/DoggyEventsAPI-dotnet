@@ -63,7 +63,6 @@ namespace DoggyEventsAPI.Controllers
         }).ToList()
       };
       return Ok(response);
-
     }
 
 
