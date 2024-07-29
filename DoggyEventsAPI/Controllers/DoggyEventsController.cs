@@ -25,7 +25,6 @@ namespace DoggyEventsAPI.Controllers
     }
 
 
-
     //POST: {apibaseurl}/api/doggyevents
     [HttpPost]
     //[Authorize]
