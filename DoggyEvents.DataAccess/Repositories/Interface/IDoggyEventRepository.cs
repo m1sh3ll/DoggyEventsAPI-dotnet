@@ -14,5 +14,6 @@ namespace DoggyEvents.DataAccess.Repositories.Interface
     public Task<DoggyEvent?> UpdateAsync(DoggyEvent dogEvent);
 
     public Task<DoggyEvent?> DeleteAsync(Guid id);
+
   }
 }
