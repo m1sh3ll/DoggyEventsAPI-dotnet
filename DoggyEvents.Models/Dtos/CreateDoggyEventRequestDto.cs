@@ -9,9 +9,7 @@ namespace DoggyEvents.Models.Dtos
   public class CreateDoggyEventRequestDto
   {
     public string DogName { get; set; }
-
     public DateTime PublishedDate { get; set; }
-
     public Guid[] EventCategories { get; set; }
   }
 }
