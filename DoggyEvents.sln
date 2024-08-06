@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoggyEventsAPI", "DoggyEventsAPI\DoggyEventsAPI.csproj", "{3CAAE5F6-3BAD-485B-9D0B-4B12BE63E0C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoggyEventsAPI", "DoggyEventsAPI\DoggyEventsAPI.csproj", "{3CAAE5F6-3BAD-485B-9D0B-4B12BE63E0C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoggyEvents.DataAccess", "DoggyEvents.DataAccess\DoggyEvents.DataAccess.csproj", "{D9D5CD3F-FD46-4BCF-B482-ECC8960D8C6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoggyEvents.DataAccess", "DoggyEvents.DataAccess\DoggyEvents.DataAccess.csproj", "{D9D5CD3F-FD46-4BCF-B482-ECC8960D8C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoggyEvents.Models", "DoggyEvents.Models\DoggyEvents.Models.csproj", "{0DF33438-F254-4F44-8027-14C59464E05B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoggyEvents.Models", "DoggyEvents.Models\DoggyEvents.Models.csproj", "{0DF33438-F254-4F44-8027-14C59464E05B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoggyEvents.Utility", "DoggyEvents.Utility\DoggyEvents.Utility.csproj", "{69A1159A-3F02-44F2-8AF8-F2E093A5F216}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoggyEvents.Utility", "DoggyEvents.Utility\DoggyEvents.Utility.csproj", "{69A1159A-3F02-44F2-8AF8-F2E093A5F216}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{597DF2A5-8CB3-4029-A4B1-498C65A40C47}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
