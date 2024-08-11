@@ -24,8 +24,8 @@ builder.Services.Configure<IdentityOptions>(options =>
   options.Password.RequireLowercase = false;
   options.Password.RequireUppercase = false;
   options.Password.RequireNonAlphanumeric = false;
-
 });
+
 
 var key = builder.Configuration.GetValue<string>("ApiSettings:Secret");
 
