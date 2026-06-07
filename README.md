@@ -1,30 +1,56 @@
-# Doggy Events
+# DoggyEventsAPI
 
-Doggy Events is a Udemy-assisted learning project I used to practice building a web application and working through a guided development workflow.
+DoggyEventsAPI is the backend component of the DoggyEvents portfolio learning project. The application was developed while following a structured Udemy course to gain hands-on experience with ASP.NET Core Web API development, Entity Framework, database design, and RESTful services.
 
-This project is part of my learning history and is not presented as professional client or employer work.
+The project also provided an opportunity to explore the complete application workflow, including frontend development, UI planning, and design concepts using Figma and Webflow.
 
-## Purpose
+## Features
 
-The goal of this project was to practice:
+* ASP.NET Core Web API
+* RESTful endpoints
+* CRUD operations
+* Entity Framework integration
+* Database-driven application structure
+* JSON-based API communication
+* Backend support for the DoggyEvents frontend application
 
-- Project setup and organization
-- Web application structure
-- Working through a guided course project
-- Reading and modifying existing code
-- Debugging issues during development
-- Using Git/GitHub to track project progress
+## Tech Stack
 
-## What I Learned
+* C#
+* ASP.NET Core Web API
+* .NET
+* Entity Framework
+* SQL Database Concepts
+* Swagger
+* Git / GitHub
+* Visual Studio
 
-Through this project, I practiced following a structured development process and became more comfortable working with application files, UI changes, and project organization.
+## Project Background
 
-It also helped me understand how tutorial-based projects differ from original portfolio projects, which is why my current portfolio focus is shifting toward ecommerce tools and business workflow applications based on my real work experience.
+DoggyEvents was created as a learning project to strengthen both backend and frontend development skills. While following the course material, I gained practical experience building APIs, structuring projects, working with databases, and connecting frontend applications to backend services.
 
-## Project Status
+During the project, I also explored UI and user experience concepts using:
 
-Learning project / course-assisted project.
+* Figma for wireframes and interface planning
+* Webflow for layout and design exploration
 
-## Notes
+## Skills Demonstrated
 
-This repository is kept public as part of my coding journey and learning record.
+* ASP.NET Core API Development
+* Entity Framework
+* CRUD Operations
+* Project Organization
+* API Routing and Controllers
+* Database Design Fundamentals
+* JSON Serialization
+* Git Version Control
+* Figma Prototyping
+* Webflow Design Concepts
+
+## Related Projects
+
+* DoggyEvents Angular (Frontend Application)
+
+## Status
+
+Portfolio learning project completed as part of ongoing .NET and web development training.
