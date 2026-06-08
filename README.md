@@ -1,18 +1,21 @@
 # DoggyEventsAPI
 
-DoggyEventsAPI is the backend component of the DoggyEvents portfolio learning project. The application was developed while following a structured Udemy course to gain hands-on experience with ASP.NET Core Web API development, Entity Framework, database design, and RESTful services.
+DoggyEventsAPI is the backend component of the DoggyEvents portfolio learning project. The project was developed while following a structured Udemy course to gain hands-on experience with ASP.NET Core Web API development, Entity Framework, authentication, authorization, and RESTful API design.
 
-The project also provided an opportunity to explore the complete application workflow, including frontend development, UI planning, and design concepts using Figma and Webflow.
+The overall DoggyEvents project also included frontend development and design exploration using Angular, Figma, and Webflow.
 
 ## Features
 
-* ASP.NET Core Web API
-* RESTful endpoints
-* CRUD operations
-* Entity Framework integration
-* Database-driven application structure
-* JSON-based API communication
-* Backend support for the DoggyEvents frontend application
+* RESTful API endpoints
+* User registration
+* User login
+* JWT token generation
+* Role-based user setup
+* ASP.NET Core Identity integration
+* Entity Framework data access
+* CRUD-style backend structure
+* Custom API response objects
+* Backend support for the DoggyEvents Angular frontend
 
 ## Tech Stack
 
@@ -20,37 +23,40 @@ The project also provided an opportunity to explore the complete application wor
 * ASP.NET Core Web API
 * .NET
 * Entity Framework
+* ASP.NET Core Identity
+* JWT Authentication
 * SQL Database Concepts
 * Swagger
-* Git / GitHub
 * Visual Studio
+* Git / GitHub
 
 ## Project Background
 
-DoggyEvents was created as a learning project to strengthen both backend and frontend development skills. While following the course material, I gained practical experience building APIs, structuring projects, working with databases, and connecting frontend applications to backend services.
+DoggyEvents was created as a learning project while following a Udemy course. The purpose was to strengthen practical backend development skills and understand how a .NET API supports a frontend application.
 
-During the project, I also explored UI and user experience concepts using:
+In addition to the backend API, the project gave me exposure to the larger web application workflow, including:
 
-* Figma for wireframes and interface planning
-* Webflow for layout and design exploration
+* Angular frontend development
+* Figma interface planning
+* Webflow layout and design exploration
 
 ## Skills Demonstrated
 
 * ASP.NET Core API Development
-* Entity Framework
-* CRUD Operations
+* Authentication and Authorization Concepts
+* JWT Token Creation
+* ASP.NET Core Identity
+* API Controllers and Routing
+* Entity Framework Data Access
+* DTO Usage
+* Role-Based User Management
 * Project Organization
-* API Routing and Controllers
-* Database Design Fundamentals
-* JSON Serialization
 * Git Version Control
-* Figma Prototyping
-* Webflow Design Concepts
 
-## Related Projects
+## Related Project
 
-* DoggyEvents Angular (Frontend Application)
+* DoggyEvents Angular frontend
 
 ## Status
 
-Portfolio learning project completed as part of ongoing .NET and web development training.
+Portfolio learning project based on a Udemy course.
